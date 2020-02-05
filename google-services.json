@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1042390785865",
+    "firebase_url": "https://dispensariomedico-1c87e.firebaseio.com",
+    "project_id": "dispensariomedico-1c87e",
+    "storage_bucket": "dispensariomedico-1c87e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042390785865:android:c4f3023b08dbef61424498",
+        "android_client_info": {
+          "package_name": "com.example.dispensadormedico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042390785865-7dnnl6oscpcq03b88f0gi2869h7brs5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpJtagt5PmqYJsiEKfycljI8bkZliwk_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042390785865-7dnnl6oscpcq03b88f0gi2869h7brs5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
