@@ -1,7 +1,10 @@
 package com.example.dispensadormedico.Medicamento;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -29,22 +32,31 @@ public class activity_list_Pastilla extends AppCompatActivity implements Asyncht
     private RecyclerView recycle;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
+    private Button btnCrearP;
     VariablesGlobales vg=VariablesGlobales.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_pastilla);
 
-        /*Map<String, String> datos = new HashMap<String, String>();
-            WebService ws= new WebService("http://radiant-thicket-98779.herokuapp.com/wsJSONListaPastilla.php",
+
+        Map<String, String> datos = new HashMap<String, String>();
+        WebService ws= new WebService("http://radiant-thicket-98779.herokuapp.com/wsJSONListaPastilla.php",
                 datos, activity_list_Pastilla.this, activity_list_Pastilla.this);
-            ws.execute("");*/
+        ws.execute("");
+        btnCrearP=findViewById(R.id.btnAgregarPastilla);
+        btnCrearP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(activity_list_Pastilla.this, activity_CrearPastilla.class));
+            }
+        });
+
     }
 
     @Override
     public void processFinish(String result) throws JSONException {
         Log.i("ProcessFinish",result);
-
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONArray contacts = jsonObject.getJSONArray("data");

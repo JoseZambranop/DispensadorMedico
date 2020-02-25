@@ -15,32 +15,10 @@
             android:columnCount="2"
             android:padding="5dp"
             android:rowCount="2">
-
-            <EditText
-                android:id="@+id/TxtBuscarPersona"
-                android:layout_width="275dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="10dp"
-                android:inputType="textCapCharacters"
-                android:hint="Buscar por nombre"
-                android:singleLine="true" />
-
-            <ImageButton
-                android:id="@+id/imageButtonBuscarPersona"
-                android:layout_width="42dp"
-                android:layout_height="38dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/custom_image_button"
-                android:src="@drawable/buscar" />
-
             <Button
                 android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
+                android:id="@+id/btnAgregarPaciente"
                 android:layout_height="match_parent"
                 android:background="@drawable/bgbtn"
                 android:textColor="#FFFEFE"

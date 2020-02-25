@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#FFF"
-    android:layout_height="match_parent"
-    tools:context=".Login.MainActivity">
+    android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -45,11 +44,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Datos Personales"
+                        android:text="Pastilla"
                         android:textSize="18sp"></TextView>
 
                     <EditText
-                        android:id="@+id/txtNombreCcuidador"
+                        android:id="@+id/txtNombrePast"
                         android:layout_width="307dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -58,66 +57,25 @@
                         android:paddingLeft="18dp" />
 
                     <EditText
-                        android:id="@+id/txtApellidoCcuidador"
+                        android:id="@+id/txtGramosPast"
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/bgeditext"
-                        android:hint="Apellido"
+                        android:hint="Gramos"
                         android:paddingLeft="18dp" />
-
-                    <EditText
-                        android:id="@+id/txtEdadCcuidador"
-                        android:layout_width="309dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="10dp"
-                        android:background="@drawable/bgeditext"
-                        android:hint="Edad"
-                        android:paddingLeft="18dp" />
-
-
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="310dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Datos de la Cuenta"
-                        android:textSize="18sp"/>
-
-                    <EditText
-                        android:id="@+id/txtCorreoCcuidador"
-                        android:layout_width="310dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="10dp"
-                        android:background="@drawable/bgeditext"
-                        android:hint="Correo"
-                        android:paddingLeft="18dp" />
-
-                    <EditText
-                        android:id="@+id/txtClaveCcuidador"
-                        android:layout_width="311dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="10dp"
-                        android:background="@drawable/bgeditext"
-                        android:hint="Contraseña"
-                        android:inputType="text|textPassword"
-                        android:paddingLeft="18dp" />
-                </LinearLayout>
 
                 <Button
-                    android:id="@+id/btnCrearCuidadorA"
+                    android:id="@+id/btnCrearPastilla"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bgbtn"
-                    android:text="Crear Cuenta"
+                    android:text="Añadir Pastilla"
 
                     android:textColor="#FFFEFE"
                     android:textSize="20dp" />

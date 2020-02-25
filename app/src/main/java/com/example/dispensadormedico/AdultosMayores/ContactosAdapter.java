@@ -1,6 +1,8 @@
-package com.example.dispensadormedico.Login;
+package com.example.dispensadormedico.AdultosMayores;
 
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.dispensadormedico.Login.Person;
 import com.example.dispensadormedico.R;
 import com.squareup.picasso.Picasso;
 
@@ -53,24 +56,24 @@ public class ContactosAdapter extends RecyclerView.Adapter<ContactosAdapter.Cont
         viewHolder.edad.setText("Edad: "+items.get(i).getEdad());
         viewHolder.email.setText("Email: "+items.get(i).getCorreo());
 
-        /*viewHolder.contactosCardView.setOnClickListener(new View.OnClickListener() {
+        viewHolder.contactosCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle =new Bundle();
-                bundle.putString("ctImagen",items.get(i).getImagen());
-                bundle.putString("ctId",items.get(i).getId());
-                bundle.putString("ctNombre",items.get(i).getName());
-                bundle.putString("ctEmail",items.get(i).getEmail());
+                //bundle.putString("ctImagen",items.get(i).getImagen());
+                bundle.putString("ctnombre",items.get(i).getNombre());
+                bundle.putString("ctid",items.get(i).getId());
+               /* bundle.putString("ctEmail",items.get(i).getEmail());
                 bundle.putString("ctAddress",items.get(i).getAddress());
                 bundle.putString("ctGender",items.get(i).getGender());
                 bundle.putString("ctMobile",items.get(i).getMobile());
                 bundle.putString("ctHome",items.get(i).getHome());
-                bundle.putString("ctOffice",items.get(i).getOffice());
-                Intent iconIntent =new Intent(view.getContext(), Detalle.class);
-                iconIntent.putExtras(bundle);
-                view.getContext().startActivity(iconIntent);
+                bundle.putString("ctOffice",items.get(i).getOffice());*/
+                Intent Intent =new Intent(view.getContext(), activity_bio_AdultoMayores.class);
+                Intent.putExtras(bundle);
+                view.getContext().startActivity(Intent);
             }
-        });*/
+        });
     }
 
     @Override

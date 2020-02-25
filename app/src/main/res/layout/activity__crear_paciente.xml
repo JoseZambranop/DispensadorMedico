@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#FFF"
-    android:layout_height="match_parent"
-    tools:context=".Login.MainActivity">
+    android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -49,7 +48,7 @@
                         android:textSize="18sp"></TextView>
 
                     <EditText
-                        android:id="@+id/txtNombreCcuidador"
+                        android:id="@+id/txtNombrePac"
                         android:layout_width="307dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
@@ -58,7 +57,7 @@
                         android:paddingLeft="18dp" />
 
                     <EditText
-                        android:id="@+id/txtApellidoCcuidador"
+                        android:id="@+id/txtApellidoPac"
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
@@ -67,15 +66,13 @@
                         android:paddingLeft="18dp" />
 
                     <EditText
-                        android:id="@+id/txtEdadCcuidador"
+                        android:id="@+id/txtEdadPac"
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/bgeditext"
                         android:hint="Edad"
                         android:paddingLeft="18dp" />
-
-
 
                 </LinearLayout>
 
@@ -91,7 +88,7 @@
                         android:textSize="18sp"/>
 
                     <EditText
-                        android:id="@+id/txtCorreoCcuidador"
+                        android:id="@+id/txtCorreoPac"
                         android:layout_width="310dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
@@ -100,7 +97,7 @@
                         android:paddingLeft="18dp" />
 
                     <EditText
-                        android:id="@+id/txtClaveCcuidador"
+                        android:id="@+id/txtClavePac"
                         android:layout_width="311dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
@@ -111,7 +108,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/btnCrearCuidadorA"
+                    android:id="@+id/btnCrearPac"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

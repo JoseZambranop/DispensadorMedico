@@ -4,7 +4,15 @@ public class VariablesGlobales {
     private static VariablesGlobales instance;
 
     private static String Nombre,Apellido, Correo, Clave;
-    private static int Edad;
+    private static int Edad, id;
+
+    public static int getId() {
+        return id;
+    }
+
+    public static void setId(int id) {
+        VariablesGlobales.id = id;
+    }
 
     public String getNombre() {
         return Nombre;

@@ -2,17 +2,18 @@ package com.example.dispensadormedico.Login;
 
 public class Person {
     private String nombre;
-    private String dni;
     private String edad;
-    private String bio;
     private String imagen;
     private String correo;
+    private String id;
 
-    public Person(String imagen, String nombre, String correo, String edad) {
+
+    public Person(String imagen, String nombre, String correo, String edad,String id) {
         this.nombre = nombre;
         this.edad = edad;
         this.imagen = imagen;
         this.correo=correo;
+        this.id=id;
     }
 
     public Person(String nombre, String edad, String correo) {
@@ -20,6 +21,14 @@ public class Person {
         this.edad = edad;
         this.imagen = imagen;
         this.correo = correo;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getCorreo() {
@@ -38,13 +47,6 @@ public class Person {
         this.nombre = nombre;
     }
 
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
 
     public String getEdad() {
         return edad;
@@ -54,13 +56,6 @@ public class Person {
         this.edad = edad;
     }
 
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
 
     public String getImagen() {
         return imagen;

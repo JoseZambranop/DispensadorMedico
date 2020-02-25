@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.dispensadormedico.BotonesManuales.DispositivosBT;
 import com.example.dispensadormedico.Medicamento.activity_list_Pastilla;
 import com.example.dispensadormedico.R;
 import com.example.dispensadormedico.VariablesGlobales;
@@ -29,7 +30,6 @@ public class activity_menu extends AppCompatActivity {
         btnAdultoMayor = findViewById(R.id.btn_AdultosMayor);
         btnPastillero=findViewById(R.id.btn_Dispenser);
         btnMedicine=findViewById(R.id.btn_medicines);
-
         txtNombre=findViewById(R.id.IdUsuario);
         txtNombre.setText(vg.getNombre()+" "+vg.getApellido());
        /* txtApellido=findViewById(R.id.txtpApellido);
@@ -42,7 +42,7 @@ public class activity_menu extends AppCompatActivity {
         btnPastillero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_menu.this, activity_CrearCuidador.class));
+                startActivity(new Intent(activity_menu.this, DispositivosBT.class));
             }
         });
         btnAdultoMayor.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,6 @@ public class activity_menu extends AppCompatActivity {
                 startActivity(new Intent(activity_menu.this, activity_list_Pastilla.class));
             }
         });
-
     }
 
 }

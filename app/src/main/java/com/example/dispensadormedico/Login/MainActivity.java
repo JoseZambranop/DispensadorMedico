@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements Asynchtask {
             ps.setEdad(Integer.parseInt(c.getString("edad")));
             ps.setCorreo(c.getString("correo"));
             ps.setClave(c.getString("clave"));
+            ps.setId(Integer.parseInt(c.getString("id")));
             Cuidador.add(ps);
         }
         startActivity(new Intent(MainActivity.this, activity_menu.class));

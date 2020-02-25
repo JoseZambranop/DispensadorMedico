@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
-import com.example.dispensadormedico.Login.ContactosAdapter;
 import com.example.dispensadormedico.Login.Person;
+import com.example.dispensadormedico.Paciente.activity_CrearPaciente;
 import com.example.dispensadormedico.R;
 import com.example.dispensadormedico.VariablesGlobales;
 
@@ -30,6 +33,7 @@ public class activity_list_adult extends AppCompatActivity implements Asynchtask
     private RecyclerView recycle;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
+    private Button btnAgregarPac;
     VariablesGlobales vg=VariablesGlobales.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,13 @@ public class activity_list_adult extends AppCompatActivity implements Asynchtask
         WebService ws= new WebService("http://radiant-thicket-98779.herokuapp.com/wsJSONListaPacientes.php?correo="+vg.getCorreo().toString()+"&clave="+vg.getClave().toString(),
                 datos, activity_list_adult.this, activity_list_adult.this);
         ws.execute("");
+        btnAgregarPac=findViewById(R.id.btnAgregarPaciente);
+        btnAgregarPac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(activity_list_adult.this, activity_CrearPaciente.class));
+            }
+        });
     }
 
     @Override
@@ -55,7 +66,8 @@ public class activity_list_adult extends AppCompatActivity implements Asynchtask
                 String apellido = c.getString("apellido");
                 String edad = c.getString("edad");
                 String email = c.getString("correo");
-                    items.add(new Person("https://i.pinimg.com/originals/b9/af/76/b9af76545802b866b580a3db059fb8c8.png", name+" "+apellido, email, edad));
+                String idP=c.getString("idpac");
+                    items.add(new Person("https://i.pinimg.com/originals/b9/af/76/b9af76545802b866b580a3db059fb8c8.png", name+" "+apellido, email, edad,idP));
             }
         }catch (Exception ex){
             ex.printStackTrace();

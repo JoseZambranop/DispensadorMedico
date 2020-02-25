@@ -25,10 +25,10 @@ public class PastillaAdapter extends RecyclerView.Adapter<PastillaAdapter.Pastil
         public ImageView imagen;
         public TextView nombre;
         public TextView gramos;
-        public PastillaViewHolder(View v){
+        public PastillaViewHolder(View v) {
             super(v);
-            pastillaCardView=(CardView)v.findViewById(R.id.pastilla_card);
-            imagen = (ImageView)v.findViewById(R.id.Imagen);
+            pastillaCardView = (CardView) v.findViewById(R.id.pastilla_card);
+        //imagen = (ImageView)v.findViewById(R.id.Imagen);
             nombre=(TextView)v.findViewById(R.id.nombre);
             gramos=(TextView)v.findViewById(R.id.txtgramos);
 
@@ -37,15 +37,15 @@ public class PastillaAdapter extends RecyclerView.Adapter<PastillaAdapter.Pastil
     }
     @Override
     public PastillaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.person_card,viewGroup,false);
+        View v= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.pastilla_card,viewGroup,false);
         return new PastillaViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull PastillaViewHolder viewHolder, final int i) {
 
-        Picasso.with(viewHolder.imagen.getContext())
-                .load(items.get(i).getImagen()).into(viewHolder.imagen);
+        /*Picasso.with(viewHolder.imagen.getContext())
+                .load(items.get(i).getImagen()).into(viewHolder.imagen);*/
 
         //viewHolder.iD.setText("Id: "+items.get(i).getId());
         viewHolder.nombre.setText("Nombre: "+items.get(i).getNombre());
