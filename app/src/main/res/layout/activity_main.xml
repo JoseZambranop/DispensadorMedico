@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="Dispensario Médico"
+                    android:text="Medical Dispensary"
                     android:textColor="#0F0F0F"
                     android:textSize="28dp" />
                 <TextView
@@ -47,7 +47,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="12dp"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="Bienvenido Usuario"
+                    android:text="Welcome User"
                     android:textColor="#3A3A3A"
                     android:textSize="18dp" />
 
@@ -66,7 +66,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bgeditext"
-                    android:hint="Contraseña"
+                    android:hint="Password"
                     android:inputType="text|textPassword"
                     android:paddingLeft="18dp"/>
                 <TextView
@@ -76,7 +76,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="Crear Cuenta"
+                    android:text="Create Account"
                     android:textColor="#3A3A3A"
                     android:textSize="18dp" />
                 <TextView
@@ -85,8 +85,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
+                    android:textAlignment="center"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="¿Ha olvidado su contraseña?"
+                    android:text="Have you forgotten your password?"
                     android:textColor="#3A3A3A"
                     android:textSize="18dp" />
                 <Button
@@ -96,7 +97,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/bgbtn"
-                    android:text="Ingresar"
+                    android:text="Log In "
                     android:textColor="#FFFEFE"
                     android:textSize="20dp" />
             </LinearLayout>

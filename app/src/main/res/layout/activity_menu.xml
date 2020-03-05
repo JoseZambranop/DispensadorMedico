@@ -49,7 +49,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Perfil de Usuario "
+                            android:text="User Profile"
                             android:textStyle="bold" />
 
                         <View
@@ -63,7 +63,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Informacion del Usuario "
+                            android:text="User information "
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -102,7 +102,7 @@
                             android:layout_width="119dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text=" Adulto Mayor"
+                            android:text="Elderly"
                             android:textStyle="bold"
                             android:textAlignment="center"/>
 
@@ -118,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Lista de adultos mayores"
+                            android:text="Seniors List"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -148,7 +148,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text=" Dispensador "
+                            android:text=" Dispenser "
                             android:textStyle="bold" />
 
                         <View
@@ -162,7 +162,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Lista de dispensadores"
+                            android:text="List of Dispensers"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -176,52 +176,6 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <androidx.cardview.widget.CardView
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_width="160dp"
-                    android:layout_height="190dp"
-                    android:layout_margin="10dp">
-
-                    <LinearLayout
-                        android:id="@+id/btn_actividades"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackground"
-                            android:padding="10dp"
-                            android:src="@drawable/actividades" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Actividades"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/secondary_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Lista de Actividades"
-                            android:textColor="@android:color/darker_gray" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
                 <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
@@ -246,7 +200,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Medicinas"
+                            android:text="Medicines"
                             android:textStyle="bold" />
 
                         <View
@@ -260,7 +214,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Lista de Medicinas"
+                            android:text="Drug List"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>

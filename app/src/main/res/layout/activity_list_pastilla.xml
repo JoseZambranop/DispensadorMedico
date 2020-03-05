@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bgbtn"
                 android:textColor="#FFFEFE"
-                android:text="Agregar Pastilla"
+                android:text="Add Pill"
                 android:id="@+id/btnAgregarPastilla"
                 android:padding="7sp"/>
         </GridLayout>
