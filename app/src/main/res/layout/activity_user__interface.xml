@@ -103,7 +103,7 @@
                             android:layout_width="119dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Aspirina"
+                            android:text="Metformina"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -148,7 +148,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text=" Apronax "
+                            android:text=" Glucophage "
                             android:textStyle="bold" />
 
                         <View
@@ -201,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Effexor XR"
+                            android:text="Enalapril "
                             android:textStyle="bold" />
 
                         <View
@@ -246,7 +246,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Vasotec"
+                            android:text="Ibuprofeno"
                             android:textStyle="bold" />
 
                         <View

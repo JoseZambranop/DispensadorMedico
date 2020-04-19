@@ -5,6 +5,7 @@ import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -18,11 +19,14 @@ import androidx.core.app.NotificationCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.allyants.notifyme.NotifyMe;
 import com.example.dispensadormedico.Horario.Horario;
 import com.example.dispensadormedico.Horario.HorarioAdapter;
 import com.example.dispensadormedico.Login.Person;
 import com.example.dispensadormedico.R;
 import com.example.dispensadormedico.VariablesGlobales;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,6 +35,7 @@ import org.json.JSONObject;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,7 +43,7 @@ import java.util.Map;
 import WebServices.Asynchtask;
 import WebServices.WebService;
 
-public class activity_bio_AdultoMayores extends AppCompatActivity implements Asynchtask {
+public class activity_bio_AdultoMayores extends AppCompatActivity implements Asynchtask, DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
     private TextView nombrebio;
     private TextView idbio;
 
@@ -66,6 +71,26 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
         WebService ws= new WebService("https://radiant-thicket-98779.herokuapp.com/wsJSONListaHorarios.php?IdPaciente="+(Integer.parseInt(getIntent().getExtras().getString("ctid")))+"&IdCuidador="+(vg.getId()),
                 datos, activity_bio_AdultoMayores.this, activity_bio_AdultoMayores.this);
         ws.execute("");
+        dpd=DatePickerDialog.newInstance(
+                activity_bio_AdultoMayores.this,
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+        tpd=TimePickerDialog.newInstance(
+                activity_bio_AdultoMayores.this,
+                now.get(Calendar.HOUR_OF_DAY),
+                now.get(Calendar.MINUTE),
+                now.get(Calendar.SECOND),
+                false
+        );
+        Button btnNot=findViewById(R.id.btnSchedule);
+        btnNot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dpd.show(getFragmentManager(),"Datepickerdialog");
+            }
+        });
     }
 
     @Override
@@ -94,6 +119,36 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
 
         adapter= new HorarioAdapter(items);
         recycle.setAdapter(adapter);
+    }
+
+    Calendar now=Calendar.getInstance();
+    TimePickerDialog tpd;
+    DatePickerDialog dpd;
+    String etTitle="Tomar Pildora",etContext="Metformina";
+    @Override
+    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+        now.set(Calendar.YEAR,year);
+        now.set(Calendar.MONTH,monthOfYear);
+        now.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+        tpd.show(getFragmentManager(),"Timepickerdialog");
+    }
+
+    @Override
+    public void onTimeSet(TimePickerDialog view, int hourOfDay, int minute, int second) {
+        now.set(Calendar.HOUR_OF_DAY,hourOfDay);
+        now.set(Calendar.MINUTE,minute);
+        now.set(Calendar.SECOND,second);
+        NotifyMe notifyMe=new NotifyMe.Builder(getApplicationContext())
+                .title(etTitle)
+                .content(etContext)
+                .color(0,0,255,255)
+                .led_color(0,255,255,255)
+                .time(now)
+                .addAction(new Intent(),"Snooze",false)
+                .key("test")
+                .addAction(new Intent(),"Dismiss",true,false)
+                .large_icon(R.mipmap.ic_launcher_round)
+                .build();
     }
 /*
     @Override

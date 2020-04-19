@@ -48,8 +48,8 @@ public class PastillaAdapter extends RecyclerView.Adapter<PastillaAdapter.Pastil
                 .load(items.get(i).getImagen()).into(viewHolder.imagen);*/
 
         //viewHolder.iD.setText("Id: "+items.get(i).getId());
-        viewHolder.nombre.setText("Nombre: "+items.get(i).getNombre());
-        viewHolder.gramos.setText("Gramos: "+items.get(i).getGramos());
+        viewHolder.nombre.setText("Name: "+items.get(i).getNombre());
+        viewHolder.gramos.setText("Milligrams: "+items.get(i).getGramos());
         //viewHolder.email.setText("Email: "+items.get(i).getCorreo());
 
         /*viewHolder.contactosCardView.setOnClickListener(new View.OnClickListener() {

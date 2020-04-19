@@ -52,8 +52,8 @@ public class ContactosAdapter extends RecyclerView.Adapter<ContactosAdapter.Cont
                 .load(items.get(i).getImagen()).into(viewHolder.imagen);
 
         //viewHolder.iD.setText("Id: "+items.get(i).getId());
-        viewHolder.nombre.setText("Nombre: "+items.get(i).getNombre());
-        viewHolder.edad.setText("Edad: "+items.get(i).getEdad());
+        viewHolder.nombre.setText("Name: "+items.get(i).getNombre());
+        viewHolder.edad.setText("Age: "+items.get(i).getEdad());
         viewHolder.email.setText("Email: "+items.get(i).getCorreo());
 
         viewHolder.contactosCardView.setOnClickListener(new View.OnClickListener() {

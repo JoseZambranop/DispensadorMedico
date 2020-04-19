@@ -44,7 +44,7 @@
                 <Button
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
-                    android:id="@+id/donow"
+                    android:id="@+id/btnSchedule"
                     android:text="Add Schedule"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

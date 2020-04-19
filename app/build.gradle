@@ -43,4 +43,8 @@ dependencies {
     //  implementation 'com.google.firebase:firebase-analytics:17.2.2'
     //implementation 'com.google.firebase:firebase-database:19.2.0'
 
+
+    implementation 'com.wdullaer:materialdatetimepicker:3.6.0'
+    implementation 'com.github.jakebonk:NotifyMe:1.0.0'
+
 }

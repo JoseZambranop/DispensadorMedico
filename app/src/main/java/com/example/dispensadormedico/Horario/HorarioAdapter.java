@@ -30,7 +30,7 @@ public class HorarioAdapter extends RecyclerView.Adapter<HorarioAdapter.HorarioV
         public HorarioViewHolder(View v){
             super(v);
             HorarioCardView=(CardView)v.findViewById(R.id.horario_card);
-           hora= (TextView) v.findViewById(R.id.txthora);
+            hora= (TextView) v.findViewById(R.id.txthora);
             fecha=(TextView)v.findViewById(R.id.txtFecha);
 
         }
