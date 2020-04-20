@@ -23,12 +23,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
+                android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:textSize="18dp"
                 android:id="@+id/nombre"/>
@@ -36,12 +39,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
+                android:textColor="@android:color/black"
                 android:text="E-mail"
                 android:id="@+id/correo"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Age"
+                android:textColor="@android:color/black"
                 android:paddingTop="5dp"
                 android:id="@+id/edad"/>
 

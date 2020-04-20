@@ -45,6 +45,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Pill"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:textSize="18sp"></TextView>
 
                     <EditText
@@ -53,6 +55,8 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/bgeditext"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:hint="Name"
                         android:paddingLeft="18dp" />
 
@@ -61,6 +65,8 @@
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:background="@drawable/bgeditext"
                         android:hint="Grams"
                         android:paddingLeft="18dp" />

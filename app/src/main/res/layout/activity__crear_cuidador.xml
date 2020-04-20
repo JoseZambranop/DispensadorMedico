@@ -46,6 +46,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Personal information"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:textSize="18sp"></TextView>
 
                     <EditText
@@ -55,6 +57,8 @@
                         android:layout_marginTop="5dp"
                         android:background="@drawable/bgeditext"
                         android:hint="Name"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:paddingLeft="18dp" />
 
                     <EditText
@@ -62,6 +66,8 @@
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:background="@drawable/bgeditext"
                         android:hint="Last Name"
                         android:paddingLeft="18dp" />
@@ -71,6 +77,8 @@
                         android:layout_width="309dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:background="@drawable/bgeditext"
                         android:hint="Age"
                         android:paddingLeft="18dp" />
@@ -79,17 +87,23 @@
                     android:layout_width="310dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Account Data"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:textSize="18sp"/>
                     <EditText
                         android:id="@+id/txtCorreoCcuidador"
                         android:layout_width="310dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:background="@drawable/bgeditext"
                         android:hint="Mail"
                         android:paddingLeft="18dp" />
@@ -99,6 +113,8 @@
                         android:layout_width="311dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
                         android:background="@drawable/bgeditext"
                         android:hint="Password"
                         android:inputType="text|textPassword"
