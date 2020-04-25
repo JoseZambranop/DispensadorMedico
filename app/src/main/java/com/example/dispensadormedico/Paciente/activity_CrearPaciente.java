@@ -28,6 +28,7 @@ public class activity_CrearPaciente extends AppCompatActivity implements Asyncht
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__crear_paciente);
+        getSupportActionBar().hide();
 
         nombre=findViewById(R.id.txtNombrePac);
         apellido=findViewById(R.id.txtApellidoPac);

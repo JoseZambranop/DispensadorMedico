@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="275dp"
+                    android:layout_height="370dp"
                     android:background="@drawable/red">
                 </ImageView>
         </LinearLayout>
@@ -47,7 +47,7 @@
                         android:text="Personal information"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="18sp"></TextView>
+                        android:textSize="@dimen/fab_let"></TextView>
 
                     <EditText
                         android:id="@+id/txtNombrePac"
@@ -95,7 +95,7 @@
                         android:text="Account Data"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="18sp"/>
+                        android:textSize="@dimen/fab_let"/>
 
                     <EditText
                         android:id="@+id/txtCorreoPac"
@@ -122,14 +122,15 @@
                 </LinearLayout>
                 <Button
                     android:id="@+id/btnCrearPac"
-                    android:layout_width="190dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
+                    android:padding="9dp"
                     android:background="@drawable/bgbtn"
                     android:text="Create Account"
                     android:textColor="#FFFEFE"
-                    android:textSize="20dp" />
+                    android:textSize="@dimen/fab_bot" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

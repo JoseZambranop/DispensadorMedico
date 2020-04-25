@@ -17,7 +17,7 @@
             android:rowCount="2">
             <Button
                 android:layout_marginLeft="5dp"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:id="@+id/btnAgregarPaciente"
                 android:layout_height="match_parent"
                 android:background="@drawable/bgbtn"

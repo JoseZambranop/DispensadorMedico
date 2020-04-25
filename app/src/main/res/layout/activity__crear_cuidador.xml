@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="275dp"
+                    android:layout_height="370dp"
                     android:background="@drawable/red">
                 </ImageView>
         </LinearLayout>
@@ -47,8 +47,9 @@
                         android:layout_height="wrap_content"
                         android:text="Personal information"
                         android:textColor="@android:color/black"
+                        android:textSize="@dimen/fab_let"
                         android:textStyle="bold"
-                        android:textSize="18sp"></TextView>
+                        />
 
                     <EditText
                         android:id="@+id/txtNombreCcuidador"
@@ -94,9 +95,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Account Data"
+                        android:textSize="@dimen/fab_let"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="18sp"/>
+                       />
                     <EditText
                         android:id="@+id/txtCorreoCcuidador"
                         android:layout_width="310dp"
@@ -122,14 +124,15 @@
                 </LinearLayout>
                 <Button
                     android:id="@+id/btnCrearCuidadorA"
-                    android:layout_width="190dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bgbtn"
                     android:text="Create Account"
+                    android:padding="9dp"
                     android:textColor="#FFFEFE"
-                    android:textSize="20dp" />
+                    android:textSize="@dimen/fab_bot" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

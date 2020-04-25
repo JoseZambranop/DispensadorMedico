@@ -1,3 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_let">20dp</dimen>
+    <dimen name="fab_bot">22dp</dimen>
 </resources>

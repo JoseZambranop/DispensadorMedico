@@ -27,6 +27,7 @@ public class activity_CrearCuidador extends AppCompatActivity implements Asyncht
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__crear_cuidador);
+        getSupportActionBar().hide();
 
         nombre=findViewById(R.id.txtNombreCcuidador);
         apellido=findViewById(R.id.txtApellidoCcuidador);

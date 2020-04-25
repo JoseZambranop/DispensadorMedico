@@ -47,7 +47,7 @@
                         android:text="Pill"
                         android:textColor="@android:color/black"
                         android:textStyle="bold"
-                        android:textSize="18sp"></TextView>
+                        android:textSize="@dimen/fab_let"></TextView>
 
                     <EditText
                         android:id="@+id/txtNombrePast"
@@ -82,9 +82,8 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bgbtn"
                     android:text="Add Pill"
-
                     android:textColor="#FFFEFE"
-                    android:textSize="20dp" />
+                    android:textSize="@dimen/fab_bot" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -46,27 +46,15 @@
 
                         <TextView
                             android:id="@+id/IdUsuario"
-                            android:layout_width="91dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="User Profile"
+                            android:textSize="@dimen/fab_let"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/secondary_text" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="User information "
-                            android:textStyle="bold"
-                            android:textColor="@android:color/black" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -104,25 +92,11 @@
                             android:layout_width="119dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Elderly"
+                            android:text="Patients"
+                            android:textSize="@dimen/fab_let"
                             android:textColor="@android:color/black"
                             android:textStyle="bold"
                             android:textAlignment="center"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/secondary_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Seniors List"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -152,23 +126,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text=" Dispenser "
+                            android:textSize="@dimen/fab_let"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/secondary_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="List of Dispensers"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -207,22 +168,9 @@
                             android:layout_marginTop="10dp"
                             android:text="Medicines"
                             android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_let"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/secondary_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Drug List"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

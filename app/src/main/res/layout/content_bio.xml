@@ -32,17 +32,17 @@
                     android:gravity="center_horizontal"
                     android:text="Id"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/fab_let"
                     android:textColor="@android:color/black"
                     android:id="@+id/txtidadulto"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
+                    android:textSize="@dimen/fab_let"
                     android:text="Name"
                     android:textColor="@android:color/black"
                     android:textStyle="bold"
-                    android:textSize="20dp"
                     android:id="@+id/txtnombreadulto"/>
                 <Button
                     android:layout_marginTop="10dp"
@@ -51,6 +51,11 @@
                     android:text="Add Schedule"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bgbtn"
+                    android:textColor="#FFFEFE"
+                    android:padding="9dp"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/fab_bot"
 
                     ></Button>
                 <LinearLayout

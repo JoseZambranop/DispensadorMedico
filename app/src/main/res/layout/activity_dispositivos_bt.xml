@@ -10,14 +10,20 @@
         android:id="@+id/idtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/quicksand_arial"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
         android:text="Linked Devices"
+        android:layout_margin="10dp"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="@dimen/fab_let"/>
 
     <ListView
+        android:id="@+id/idlista"
+        style="@style/Widget.AppCompat.ListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/idlista"
-        android:layout_below="@+id/idtitulo"/>
+        android:layout_below="@+id/idtitulo"
+        android:fontFamily="@font/quicksand_arial"
+        android:textColor="@android:color/black" />
 </RelativeLayout>
