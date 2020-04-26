@@ -83,6 +83,31 @@
                         android:background="@drawable/bgeditext"
                         android:hint="Age"
                         android:paddingLeft="18dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:background="@drawable/bgeditext"
+                            android:hint="Male "
+                            android:padding="10dp"
+                            />
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="35dp"
+                            android:background="@drawable/bgeditext"
+                            android:hint="Female "
+                            android:padding="10dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="310dp"

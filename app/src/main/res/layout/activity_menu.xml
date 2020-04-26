@@ -42,7 +42,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackground"
                             android:padding="10dp"
-                            android:src="@drawable/perfil" />
+                            android:src="@drawable/cuidadora" />
 
                         <TextView
                             android:id="@+id/IdUsuario"
@@ -86,7 +86,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackground"
                             android:padding="10dp"
-                            android:src="@drawable/adultomayor" />
+                            android:src="@drawable/anciano" />
 
                         <TextView
                             android:layout_width="119dp"
@@ -125,7 +125,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text=" Dispenser "
+                            android:text=" Dispensers "
                             android:textSize="@dimen/fab_let"
                             android:textColor="@android:color/black"
                             android:textStyle="bold" />
@@ -160,7 +160,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackground"
                             android:padding="10dp"
-                            android:src="@drawable/medicamento" />
+                            android:src="@drawable/pasti" />
 
                         <TextView
                             android:layout_width="wrap_content"

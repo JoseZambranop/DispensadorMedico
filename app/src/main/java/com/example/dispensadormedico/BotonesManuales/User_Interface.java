@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +23,7 @@ import java.util.UUID;
 
 public class User_Interface extends AppCompatActivity {
 
-    Button Idexpulsar1, Idexpulsar2,Idexpulsar3,Idexpulsar4,IdDesconectar;
+    LinearLayout Idexpulsar1, Idexpulsar2,Idexpulsar3,Idexpulsar4, IdDesconectar;
     TextView IdBufferIn;
     Handler bluetoothIn;
     final int handlerState = 0;

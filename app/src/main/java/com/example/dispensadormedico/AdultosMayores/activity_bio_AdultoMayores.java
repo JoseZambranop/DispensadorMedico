@@ -57,14 +57,15 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio);
+
         getSupportActionBar().hide();
 
         nombrebio= findViewById(R.id.txtnombreadulto);
-        idbio=findViewById(R.id.txtidadulto);
+        //idbio=findViewById(R.id.txtidadulto);
         //imagen=(ImageView)findViewById(R.id.Imagen);
 
         nombrebio.setText(getIntent().getExtras().getString("ctnombre"));
-        idbio.setText(getIntent().getExtras().getString("ctid"));
+        //idbio.setText(getIntent().getExtras().getString("ctid"));
         //bio.setText(getIntent().getExtras().getString("curBio"));
         //imagen.setImageResource(getIntent().getExtras().getInt("curImagen"));
         //this.setEvents(R.id.donow);

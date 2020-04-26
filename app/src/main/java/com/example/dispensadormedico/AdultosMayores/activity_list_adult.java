@@ -67,7 +67,8 @@ public class activity_list_adult extends AppCompatActivity implements Asynchtask
                 String edad = c.getString("edad");
                 String email = c.getString("correo");
                 String idP=c.getString("idpac");
-                    items.add(new Person("https://i.pinimg.com/originals/b9/af/76/b9af76545802b866b580a3db059fb8c8.png", name+" "+apellido, email, edad,idP));
+                String urlImagen=c.getString("urlimagen");
+                    items.add(new Person(urlImagen, name+" "+apellido, email, edad,idP));
             }
         }catch (Exception ex){
             ex.printStackTrace();

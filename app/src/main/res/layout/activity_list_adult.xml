@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bgbtn"
                 android:textColor="#FFFEFE"
-                android:text="Add Adult"
+                android:text="Add Patients"
                 android:padding="7sp"/>
         </GridLayout>
         <LinearLayout

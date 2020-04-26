@@ -40,8 +40,8 @@
                     android:fontFamily="@font/quicksand_arial"
                     android:textStyle="bold"
                     android:textColor="@android:color/black"
-                    android:text="Medical Dispensary"
-                    android:textSize="28dp" />
+                    android:text="Smart Medicine Dispenser"
+                    android:textSize="25.2dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
