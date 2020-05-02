@@ -91,8 +91,10 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
             @Override
             public void onClick(View v) {
                 dpd.show(getFragmentManager(),"Datepickerdialog");
+
             }
         });
+
     }
 
     @Override
