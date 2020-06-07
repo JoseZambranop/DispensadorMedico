@@ -52,6 +52,9 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
     VariablesGlobales vg=VariablesGlobales.getInstance();
+    private int dia,mes,ano,hora,minutos,secondos;
+
+    String idcp="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,15 +95,16 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
             public void onClick(View v) {
                 dpd.show(getFragmentManager(),"Datepickerdialog");
 
+                //final Calendar c= Calendar.getInstance();
             }
         });
+
 
     }
 
     @Override
     public void processFinish(String result) throws JSONException {
         Log.i("ProcessFinish",result);
-
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONArray contacts = jsonObject.getJSONArray("data");
@@ -112,7 +116,8 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
                 items.add(new Horario(Fecha,hora ));
             }
         }catch (Exception ex){
-            ex.printStackTrace();
+                ex.printStackTrace();
+
         }
 
         recycle = (RecyclerView)findViewById(R.id.rcvHorario);
@@ -134,7 +139,11 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
         now.set(Calendar.YEAR,year);
         now.set(Calendar.MONTH,monthOfYear);
         now.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+        ano=now.get(Calendar.YEAR);
+        mes=now.get(Calendar.MONTH)+1;
+        dia=now.get(Calendar.DAY_OF_MONTH);
         tpd.show(getFragmentManager(),"Timepickerdialog");
+
     }
 
     @Override
@@ -142,7 +151,10 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
         now.set(Calendar.HOUR_OF_DAY,hourOfDay);
         now.set(Calendar.MINUTE,minute);
         now.set(Calendar.SECOND,second);
-        NotifyMe notifyMe=new NotifyMe.Builder(getApplicationContext())
+        hora=now.get(Calendar.HOUR_OF_DAY);
+        minutos=now.get(Calendar.MINUTE);
+        secondos= now.get(Calendar.SECOND);
+       /* NotifyMe notifyMe=new NotifyMe.Builder(getApplicationContext())
                 .title(etTitle)
                 .content(etContext)
                 .color(0,0,255,255)
@@ -152,7 +164,16 @@ public class activity_bio_AdultoMayores extends AppCompatActivity implements Asy
                 .key("test")
                 .addAction(new Intent(),"Dismiss",true,false)
                 .large_icon(R.mipmap.ic_launcher_round)
-                .build();
+                .build();*/
+        String fh=ano+"-"+mes+"-"+dia;
+        String hr=hora+"-"+minutos;
+        String url="http://radiant-thicket-98779.herokuapp.com/wsJSONGuardarHorario.php?Idc="+(vg.getId())+
+     "&Idp="+(Integer.parseInt(getIntent().getExtras().getString("ctid")))+"&Hora="+hr+"&Fecha="+fh+"&IdPast=2&IdDisp=1";
+        Map<String, String> datos = new HashMap<String, String>();
+        WebService ws= new WebService(url,
+                datos, activity_bio_AdultoMayores.this, activity_bio_AdultoMayores.this);
+        ws.execute("");
+        startActivity(new Intent(activity_bio_AdultoMayores.this, activity_list_adult.class));
     }
 /*
     @Override
